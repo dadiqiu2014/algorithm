@@ -6,8 +6,8 @@ def binary_search(l, member):
     """
     通过二分查找，返回给定元素member在列表l中的位置。
     如果没有查到，那么返回-1
-    :param l:
-    :param member:
+    :param l: 需要查找的列表，列表中的元素是排好序的
+    :param member: 要查找的元素
     :return:
     """
     # 如果需要查找的元素member 大于 列表中的最大元素或者小于列表中的最小元素，返回-1
