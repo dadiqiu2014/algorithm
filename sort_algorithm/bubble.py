@@ -1,5 +1,6 @@
 import random
 from pprint import pprint
+from sort_algorithm.tool import time_dec
 
 """冒泡排序算法 时间负责度：n^2"""
 
@@ -33,6 +34,7 @@ def bubble(ln):
     return ln
 
 
+@time_dec
 def sort_bubble(ln):
     """
     视频教程标准答案
@@ -57,6 +59,9 @@ def sort_bubble(ln):
 if __name__ == '__main__':
     # print(one_bubble(l))
     # print(bubble(l))
-    l2 = [random.randint(0, 101) for _ in range(10)]
-    print(l2)
-    print(sort_bubble(l2))
+    # l2 = [random.randint(0, 101) for _ in range(10)]
+    # print(l2)
+    # print(sort_bubble(l2))
+    l = [i for i in range(10000)]
+    random.shuffle(l)
+    sort_bubble(l)
