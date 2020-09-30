@@ -1,3 +1,7 @@
+# -*- coding: UTF-8 -*- 
+# created by shenjiannan 2020-09-30 15:21
+
+
 import random
 import time
 from sort_algorithm.tool import time_dec

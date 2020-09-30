@@ -35,6 +35,7 @@ def partition(ln, left, right):
 def quick_sort(ln, left, right):
     """
     快速排序 平均时间复杂度n*log(n) 最坏情况 n^2
+    # todo: 这个实现还没有完哦
     :param ln:
     :param left:
     :param right:
