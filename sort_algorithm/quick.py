@@ -32,19 +32,46 @@ def partition(ln, left, right):
     return left
 
 
-def quick_sort(ln, left, right):
+def quick_sort_my(ln, left, right):
     """
     快速排序 平均时间复杂度n*log(n) 最坏情况 n^2
     # todo: 这个实现还没有完哦
     :param ln:
     :param left:
+    :param right
+    :return:
+    """
+    print('ln:', ln)
+    # 如果ln长度小于2
+    if len(ln[left:right]) <= 2:
+        partition(ln, left, right)
+    else:
+        # 找中间位置
+        mid = (left + right) // 2
+        print('mid:', mid, 'left:', left, 'right:', right)
+        # 递归执行
+        quick_sort(ln, left, mid)
+        quick_sort(ln, mid, right)
+
+
+def quick_sort(ln, left, right):
+    """
+
+    :param ln:
+    :param left:
     :param right:
     :return:
     """
+    if left < right:
+        mid = partition(ln, left, right)
+        quick_sort(ln, left, mid-1)
+        quick_sort(ln, mid+1, right)
 
 
 if __name__ == '__main__':
     l = [5, 9, 4, 2, 1, 3]
-    mid = partition(l, 0, len(l)-1)
+    # mid = partition(l, 0, len(l)-1)
+    # print(l)
+    # print(mid)
+    quick_sort(l, 0, len(l)-1)
     print(l)
-    print(mid)
