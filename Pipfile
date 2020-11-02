@@ -8,6 +8,8 @@ verify_ssl = true
 [packages]
 loguru = "*"
 xlrd = "*"
+pymysql = "*"
+faker = "*"
 
 [requires]
 python_version = "3.8"

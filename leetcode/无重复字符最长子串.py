@@ -1,5 +1,5 @@
-import time
-import os
+# -*- coding: UTF-8 -*- 
+# created by shenjiannan 2020-11-02 22:11
 
 
 def string_max_substring_length(s):
@@ -29,20 +29,5 @@ def string_max_substring_length(s):
 
 
 if __name__ == '__main__':
-    # m = string_max_substring_length('a')
-    # print(m)
-    # proc = subprocess.Popen('ls', stdout=subprocess.PIPE)
-    # out, err = proc.communicate()
-    # print(out.decode('utf-8'))
-    #
-    # proc = subprocess.Popen(['sleep', '5'])
-    # while proc.poll() is None:
-    #     print('睡眠💤。。。')
-    #     time.sleep(0.2)
-    # print(proc.poll())
-    # print('hello')
-    # proc.communicate()
-    print(os.environ.copy()['password'])
-
-
-
+    m = string_max_substring_length('a')
+    print(m)
